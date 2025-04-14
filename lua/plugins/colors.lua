@@ -1,0 +1,25 @@
+return {
+  -- {
+  --   'bluz71/vim-moonfly-colors',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     -- Load the colorscheme here.
+  --     vim.cmd 'colorscheme moonfly'
+  --     -- You can configure highlights by doing something like:
+  --     vim.cmd.hi 'Comment gui=none'
+  --   end,
+  -- },
+  --
+  -- {
+  --   'craftzdog/solarized-osaka.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     -- vim.cmd 'colorscheme solarized-osaka'
+  --     -- vim.cmd.hi 'Comment gui=none'
+  --   end,
+  -- },
+}

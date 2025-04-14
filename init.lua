@@ -22,15 +22,10 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.lint',
+  --require 'kickstart.plugins.debug',
+  'ThePrimeagen/vim-be-good',
 
   { import = 'plugins' },
-  --
-  -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
-  -- Or use telescope!
-  -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
-  -- you can continue same window with `<space>sr` which resumes last telescope search
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
