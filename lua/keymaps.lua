@@ -24,7 +24,6 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
---
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
@@ -34,5 +33,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- oil.nvim
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
--- vim.keymap.set('n', 'tt', '<CMD>:terminal<CR>', { open = 'Open terminal' })
-vim.keymap.set('n', '<leader>t', ':split | terminal<CR>', { desc = 'Open terminal', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tt', ':vsplit | terminal<CR>', { desc = 'Open terminal vertically', noremap = true, silent = true })
+
+-- tabs
+vim.keymap.set('n', '<leader>nt', ':tabnew<CR>', { desc = 'New tab', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>nC', ':tabclose<CR>', { desc = 'Close tab', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>ncc', ':tabnew | terminal<CR>', { desc = 'Open terminal in a tab', noremap = true, silent = true })
