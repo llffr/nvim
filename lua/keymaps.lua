@@ -33,7 +33,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- oil.nvim
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
-vim.keymap.set('n', '<leader>tt', ':vsplit | terminal<CR>', { desc = 'Open terminal vertically', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tt', ':split<CR> :terminal<CR>', { desc = 'Open terminal', noremap = true, silent = true })
 
 -- tabs
 vim.keymap.set('n', '<leader>nt', ':tabnew<CR>', { desc = 'New tab', noremap = true, silent = true })

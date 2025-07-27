@@ -31,7 +31,6 @@ return {
         },
         opts = {},
       },
-      'folke/lazydev.nvim',
     },
     --- @module 'blink.cmp'
     --- @type blink.cmp.Config
@@ -77,14 +76,13 @@ return {
       },
 
       sources = {
-        default = { 'lsp', 'path', 'snippets', 'lazydev', 'buffer' },
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
         -- sql
         per_filetype = {
           sql = { 'snippets', 'dadbod', 'buffer' },
         },
         -- add vim-dadbod-completion to your completion providers
         providers = {
-          lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
           -- sql
           dadbod = { name = 'Dadbod', module = 'vim_dadbod_completion.blink' },
         },
@@ -352,7 +350,8 @@ return {
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'typescript-language-server',
-        'clangd',
+        'html-lsp',
+        --'clangd',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

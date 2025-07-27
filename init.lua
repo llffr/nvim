@@ -3,13 +3,10 @@
 - https://neovim.io/doc/user/lua-guide.html
 --]]
 
--- Set <space> as the leader key
 -- See `:help mapleader`
---  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = false
-vim.cmd.colorscheme 'default'
 require 'options'
 require 'keymaps'
 
@@ -24,7 +21,6 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-  --require 'kickstart.plugins.debug',
 
   { import = 'plugins' },
 }
