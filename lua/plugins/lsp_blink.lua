@@ -351,7 +351,10 @@ return {
         'stylua', -- Used to format Lua code
         'typescript-language-server',
         'html-lsp',
-        --'clangd',
+        'css-lsp',
+        'emmet-language-server',
+        'pyright', -- python
+        --'clangd', -- c/c++
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
