@@ -82,3 +82,7 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+
+if vim.fn.has 'win32' == 1 or vim.fn.has 'win64' == 1 then
+  vim.o.shell = 'powershell.exe'
+end

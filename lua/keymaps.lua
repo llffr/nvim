@@ -38,4 +38,3 @@ vim.keymap.set('n', '<leader>tt', ':split<CR> :terminal<CR>', { desc = 'Open ter
 -- tabs
 vim.keymap.set('n', '<leader>nt', ':tabnew<CR>', { desc = 'New tab', noremap = true, silent = true })
 vim.keymap.set('n', '<leader>nC', ':tabclose<CR>', { desc = 'Close tab', noremap = true, silent = true })
-vim.keymap.set('n', '<leader>ncc', ':tabnew | terminal<CR>', { desc = 'Open terminal in a tab', noremap = true, silent = true })
