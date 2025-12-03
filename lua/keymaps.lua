@@ -38,9 +38,9 @@ vim.keymap.set('n', '<leader>st', function()
   vim.cmd.term()
   vim.cmd.wincmd 'J'
   vim.api.nvim_win_set_height(0, 10)
-end)
+end, { desc = 'Open terminal' })
 
-vim.keymap.set('n', '<leader>nst', function()
+vim.keymap.set('n', '<leader>stt', function()
   vim.cmd.tabnew()
   vim.cmd.term()
-end)
+end, { desc = 'Open terminal in a new tab' })
