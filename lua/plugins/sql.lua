@@ -13,7 +13,7 @@ return {
   init = function()
     -- DBUI configuration
     vim.g.dbs = {
-      -- { name = '****', url = 'mysql://localhost/nameDB' },
+      -- { name = '***', url = 'postgres://postgres:username:password@host:port/database' },
     }
     vim.g.db_ui_use_nerd_fonts = 1
   end,
